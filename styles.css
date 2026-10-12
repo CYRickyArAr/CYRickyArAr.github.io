@@ -20,22 +20,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
 a:focus-visible, section:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
 a:hover { text-decoration: underline; text-underline-offset: 4px; }
 
-.page { max-width: 1280px; margin: 0 auto; padding: 0 48px; }
+.page { max-width: 976px; margin: 0 auto; padding: 0 48px; }
 .header { min-height: 108px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .identity { display: inline-flex; align-items: center; gap: 11px; font-size: 17px; font-weight: 650; }
 .identity img { display: block; }
 .profile-link { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; color: var(--muted); font-size: 16px; }
 .profile-link:hover { color: var(--accent); }
 
-.main { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 56px; padding: 46px 0 56px; }
-.intro { padding-top: 24px; }
-h1 { margin: 0 0 23px; font-size: clamp(38px, 4vw, 48px); line-height: 1.25; letter-spacing: -1px; font-weight: 750; }
-.intro > p { margin: 0; font-size: 18px; line-height: 1.9; color: var(--muted); }
-.intro-note { margin-top: 42px; }
-.note-line { display: block; width: 28px; height: 3px; background: var(--accent); border-radius: 2px; }
-.intro-note p { margin: 15px 0 0; font-size: 16px; color: var(--muted); }
+.main { width: 100%; max-width: 880px; margin: 0 auto; padding: 28px 0 56px; }
 .section-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 0 2px 16px; }
-.section-heading h2 { font-size: 18px; font-weight: 600; margin: 0; }
+.section-heading h1 { font-size: 18px; font-weight: 600; margin: 0; }
 .section-heading > span { font-size: 15px; color: var(--muted); }
 .site-list { list-style: none; margin: 0; padding: 0 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; }
 .site { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; align-items: start; gap: 20px; padding: 30px 0; }
@@ -47,7 +41,7 @@ h1 { margin: 0 0 23px; font-size: clamp(38px, 4vw, 48px); line-height: 1.25; let
 .visual-mark { font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; font-size: 32px; line-height: 1; }
 .icon-memory { background: #4f89c9; }
 .site-content { min-width: 0; }
-.site-content h3 { margin: 0 0 9px; font-size: 22px; font-weight: 650; line-height: 1.4; overflow-wrap: anywhere; }
+.site-content h2 { margin: 0 0 9px; font-size: 22px; font-weight: 650; line-height: 1.4; overflow-wrap: anywhere; }
 .site-content p { margin: 0; max-width: 42ch; font-size: 18px; color: var(--muted); line-height: 1.8; }
 .category { display: inline-block; margin-top: 12px; font-size: 14px; line-height: 1.7; color: var(--muted); }
 .site-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
@@ -62,17 +56,13 @@ h1 { margin: 0 0 23px; font-size: clamp(38px, 4vw, 48px); line-height: 1.25; let
 
 @media (max-width: 960px) {
   .page { padding: 0 32px; }
-  .main { grid-template-columns: 190px minmax(0, 1fr); gap: 32px; }
   .site-list { padding: 0 20px; }
   .site { gap: 14px; }
 }
 
 @media (max-width: 900px) {
   .header { min-height: 84px; }
-  .main { grid-template-columns: minmax(0, 1fr); gap: 32px; padding: 22px 0 36px; }
-  .intro { padding-top: 0; }
-  h1 { margin-bottom: 14px; }
-  .intro-note { display: none; }
+  .main { padding: 22px 0 36px; }
   .site { padding: 24px 0; }
 }
 
